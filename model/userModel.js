@@ -18,7 +18,17 @@ const userSchema = new mongoose.Schema({
        email:{
         type:String,
         required:true,
-      }
+      },
+        // Optional / future fields
+        dob: {
+          type: Date
+        },
+        address: {
+          type: String
+        }
+      
+    
+
 })
 
 module.exports= mongoose.model('usersData',userSchema)
